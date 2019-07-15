@@ -1,0 +1,8 @@
+<h1> Angular App / By: {{author}} </h1>
+<h1>{{me}} - {{moreMe}}</h1>
+<div *ngIf="appStatus">
+    <p>{{appTitle}} to my website</p>
+    <ul>
+        <li *ngFor="let item of students; let i=index;">{{i}} -{{item.sid}} - {{item.sname}} - {{item.scampus}} - {{item.slogin}}</li>
+    </ul>
+</div>
